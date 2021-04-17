@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.6rc1 on win32)" generated="20210410 18:02:12.741" rpa="false">
+<suite id="s1" name="Demo" source="C:\Users\tejshreeb\eclipse-workspace\RobotDemo\Demo">
+<suite id="s1-s1" name="autoIt" source="C:\Users\tejshreeb\eclipse-workspace\RobotDemo\Demo\autoIt">
+<suite id="s1-s1-s1" name="Autoit Tests" source="C:\Users\tejshreeb\eclipse-workspace\RobotDemo\Demo\autoIt\autoit_tests.robot">
+<test id="s1-s1-s1-t1" name="TC1_WindAuthUrl">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>Path</arg>
+<arg>D:\\Softwares\\ForRobot\\chromedriver_win32</arg>
+</arguments>
+<msg timestamp="20210410 18:02:13.178" level="INFO">Environment variable 'Path' set to value 'C:/Program Files/Java/jre1.8.0_261/bin/server;C:/Program Files/Java/jre1.8.0_261/bin;C:/Program Files/Java/jre1.8.0_261/lib/amd64;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\PBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\VBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DotNetHooking;;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Users\tejshreeb\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\tejshreeb\AppData\Local\Programs\Python\Python38\;C:\Users\tejshreeb\AppData\Local\Microsoft\WindowsApps;D:\Softwares\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Users\tejshreeb\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.8;;C:\Users\tejshreeb\eclipse\java-2020-06\eclipse;;D:\Softwares\ForRobot\chromedriver_win32'.</msg>
+<status status="PASS" starttime="20210410 18:02:13.177" endtime="20210410 18:02:13.178"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>url=https://demo.guru99.com/test/basic_auth.php</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20210410 18:02:13.178" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/basic_auth.php'.</msg>
+<status status="PASS" starttime="20210410 18:02:13.178" endtime="20210410 18:02:18.885"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210410 18:02:18.885" endtime="20210410 18:02:19.013"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" starttime="20210410 18:02:19.015" endtime="20210410 18:02:19.022"></status>
+</kw>
+<kw name="Send">
+<arguments>
+<arg>Teja</arg>
+</arguments>
+<msg timestamp="20210410 18:02:19.028" level="FAIL">No keyword with name 'Send' found.</msg>
+<status status="FAIL" starttime="20210410 18:02:19.028" endtime="20210410 18:02:19.029"></status>
+</kw>
+<status status="FAIL" starttime="20210410 18:02:13.177" endtime="20210410 18:02:19.032" critical="yes">No keyword with name 'Send' found.</status>
+</test>
+<status status="FAIL" starttime="20210410 18:02:12.816" endtime="20210410 18:02:19.037"></status>
+</suite>
+<status status="FAIL" starttime="20210410 18:02:12.814" endtime="20210410 18:02:19.041"></status>
+</suite>
+<status status="FAIL" starttime="20210410 18:02:12.789" endtime="20210410 18:02:19.044"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Demo">Demo</stat>
+<stat pass="0" fail="1" id="s1-s1" name="autoIt">Demo.autoIt</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Autoit Tests">Demo.autoIt.Autoit Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210410 18:02:13.176" level="ERROR">Error in file 'C:\Users\tejshreeb\eclipse-workspace\RobotDemo\Demo\autoIt\autoit_tests.robot' on line 4: Initializing test library 'AutoItLibrary' with no arguments failed: com_error: (-2147221164, 'Class not registered', None, None)
+Traceback (most recent call last):
+  File "C:\Users\tejshreeb\AppData\Local\Programs\Python\Python38\Lib\site-packages\AutoItLibrary\__init__.py", line 91, in __init__
+    self._AutoIt = win32com.client.Dispatch("AutoItX3.Control")
+  File "C:\Users\tejshreeb\AppData\Local\Programs\Python\Python38\Lib\site-packages\win32com\client\__init__.py", line 95, in Dispatch
+    dispatch, userName = dynamic._GetGoodDispatchAndUserName(dispatch,userName,clsctx)
+  File "C:\Users\tejshreeb\AppData\Local\Programs\Python\Python38\Lib\site-packages\win32com\client\dynamic.py", line 98, in _GetGoodDispatchAndUserName
+    return (_GetGoodDispatch(IDispatch, clsctx), userName)
+  File "C:\Users\tejshreeb\AppData\Local\Programs\Python\Python38\Lib\site-packages\win32com\client\dynamic.py", line 83, in _GetGoodDispatch
+    IDispatch = pythoncom.CoCreateInstance(IDispatch, None, clsctx, pythoncom.IID_IDispatch)</msg>
+</errors>
+</robot>
